@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
  
 .container {
@@ -14,26 +16,30 @@ header {
     background-color: #fff;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
  
 header .logo {
-    display: inline-block;
     font-size: 24px;
     margin: 0;
 }
  
 header nav {
-    display: inline-block;
+    /* Removed float: right */
+}
  
 header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 20px; /* Use gap to add space between inline items */
 }
  
 header nav ul li {
-    display: inline;
-    margin-left: 20px;
+    /* Removed display: inline */
 }
  
 header nav ul li a {
@@ -141,63 +147,21 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-}
- 
-body {
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
- 
-header, footer, section {
-    padding: 20px;
-    margin: 10px auto;
-    max-width: 1200px;
-}
- 
-header h1 {
-    margin-bottom: 0.5em;
-}
- 
-.main-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
- 
-.left-column {
-    flex: 0 1 60%;
-    margin-right: 10px;
-}
- 
-.left-column img {
-    max-width: 100%;
-    height: auto;
-}
- 
-.right-column {
-    flex: 0 1 35%;
-}
- 
-.right-column h2, .footer-column h2 {
-    margin-top: 0;
-}
- 
-footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #333;
-    color: #fff;
 }
  
-.footer-column {
+footer .footer-column {
     flex: 1 1 22%;
     margin: 10px;
     padding: 10px;
     background-color: #444;
 }
  
-.footer-column p, .footer-column ul {
+footer .footer-column p,
+footer .footer-column ul {
     margin: 0;
 }
  
