@@ -24,8 +24,6 @@ header .logo {
  
 header nav {
     display: inline-block;
-    float: right;
-}
  
 header nav ul {
     list-style: none;
@@ -144,8 +142,6 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
- 
-/* Additional styles from the second set */
  
 body {
     line-height: 1.6;
